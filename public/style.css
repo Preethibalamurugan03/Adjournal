@@ -898,7 +898,7 @@ body {
 .nav-journal-item:hover { background: var(--pill-bg); }
 
 .nav-journal-meta {
-  display: flex; justify-content: space-between; align-items: center;
+  display: flex; justify-content: space-between; align-items: flex-start;
   margin-bottom: 4px;
 }
 .nav-journal-date {
@@ -1129,6 +1129,7 @@ body {
   color: var(--sidebar-text);
   font-family: -apple-system, sans-serif;
   white-space: normal; overflow: visible; word-break: break-word;
+  flex: 1; min-width: 0;
 }
 
 /* ── Load confirmation banner ── */

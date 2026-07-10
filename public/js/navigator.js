@@ -36,7 +36,7 @@ const PRESET_JOURNALS = [
   },
   {
     id: 'preset-4',
-    listTitle: 'Preset 4 - Inline generation',
+    listTitle: 'Preset 2 - Inline generation',
     title: 'Try encircling the unsolved equation using the magic pen and ask me to solve it',
     pageCount: 1,
     preset: true,
@@ -45,7 +45,7 @@ const PRESET_JOURNALS = [
   },
   {
     id: 'preset-2',
-    listTitle: 'Preset 2 - Reflect',
+    listTitle: 'Preset 3 - Reflect',
     title: 'Try asking Nova how you have improved compared to your previous week\'s journal',
     pageCount: 1,
     preset: true,
@@ -54,7 +54,7 @@ const PRESET_JOURNALS = [
   },
   {
     id: 'preset-3',
-    listTitle: 'Preset 3 - Explain',
+    listTitle: 'Preset 4 - Explain',
     title: 'Ask Nova to explain this text to you',
     pageCount: 1,
     preset: true,

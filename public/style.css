@@ -787,7 +787,7 @@ body {
 
 .nav-panel {
   position: fixed; top: 0; left: 0; bottom: 0;
-  width: 280px;
+  width: 320px;
   background: var(--sidebar-bg);
   border-right: 1px solid var(--sidebar-border);
   box-shadow: 4px 0 32px rgba(0,0,0,0.13);
@@ -1128,7 +1128,7 @@ body {
   font-size: 13px; font-weight: 600;
   color: var(--sidebar-text);
   font-family: -apple-system, sans-serif;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  white-space: normal; overflow: visible; word-break: break-word;
 }
 
 /* ── Load confirmation banner ── */

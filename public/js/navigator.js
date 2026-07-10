@@ -35,6 +35,15 @@ const PRESET_JOURNALS = [
     settings: { color: 'blush', dark: false, size: 'a4', spacing: 'narrow', template: 'blank', margin: false, bgImage: 'images/templates/12.png' },
   },
   {
+    id: 'preset-4',
+    listTitle: 'Preset 4 - Inline generation',
+    title: 'Try encircling the unsolved equation using the magic pen and ask me to solve it',
+    pageCount: 1,
+    preset: true,
+    pages: [{ title: 'Try encircling the unsolved equation using the magic pen and ask me to solve it', text: '', canvas: 'images/presets/preset-4.png' }],
+    settings: { color: 'blush', dark: false, size: 'a4', spacing: 'narrow', template: 'blank', margin: false, bgImage: 'images/templates/before.png' },
+  },
+  {
     id: 'preset-2',
     listTitle: 'Preset 2 - Reflect',
     title: 'Try asking Nova how you have improved compared to your previous week\'s journal',
@@ -45,21 +54,12 @@ const PRESET_JOURNALS = [
   },
   {
     id: 'preset-3',
-    listTitle: 'Preset 3 -  Explain',
+    listTitle: 'Preset 3 - Explain',
     title: 'Ask Nova to explain this text to you',
     pageCount: 1,
     preset: true,
     pages: [{ title: 'Ask Nova to explain this text to you', text: '', canvas: 'images/presets/preset-3.png' }],
     settings: { color: 'blush', dark: false, size: 'a4', spacing: 'narrow', template: 'blank', margin: false, bgImage: 'images/templates/7.jpeg' },
-  },
-  {
-    id: 'preset-4',
-    listTitle: 'Preset 4 - Inline generation',
-    title: 'Try encircling the unsolved equation using the magic pen and ask me to solve it',
-    pageCount: 1,
-    preset: true,
-    pages: [{ title: 'Try encircling the unsolved equation using the magic pen and ask me to solve it', text: '', canvas: 'images/presets/preset-4.png' }],
-    settings: { color: 'blush', dark: false, size: 'a4', spacing: 'narrow', template: 'blank', margin: false, bgImage: 'images/templates/before.png' },
   },
   {
     id: 'preset-5',

@@ -27,6 +27,7 @@ function applyDefaultAppearance() {
 const PRESET_JOURNALS = [
   {
     id: 'preset-1',
+    listTitle: 'Preset 1 - Add an image',
     title: 'Try Adding an image of kidney in the box using the magic pen',
     pageCount: 1,
     preset: true,
@@ -35,6 +36,7 @@ const PRESET_JOURNALS = [
   },
   {
     id: 'preset-2',
+    listTitle: 'Preset 2 - Reflect',
     title: 'Try asking Nova how you have improved compared to your previous week\'s journal',
     pageCount: 1,
     preset: true,
@@ -43,6 +45,7 @@ const PRESET_JOURNALS = [
   },
   {
     id: 'preset-3',
+    listTitle: 'Preset 3 -  Explain',
     title: 'Ask Nova to explain this text to you',
     pageCount: 1,
     preset: true,
@@ -51,11 +54,21 @@ const PRESET_JOURNALS = [
   },
   {
     id: 'preset-4',
+    listTitle: 'Preset 4 - Inline generation',
     title: 'Try encircling the unsolved equation using the magic pen and ask me to solve it',
     pageCount: 1,
     preset: true,
     pages: [{ title: 'Try encircling the unsolved equation using the magic pen and ask me to solve it', text: '', canvas: 'images/presets/preset-4.png' }],
     settings: { color: 'blush', dark: false, size: 'a4', spacing: 'narrow', template: 'blank', margin: false, bgImage: 'images/templates/before.png' },
+  },
+  {
+    id: 'preset-5',
+    listTitle: 'Preset 5 - Smart layout changes',
+    title: 'Ask Nova to make this Journal aesthetic or beachy',
+    pageCount: 1,
+    preset: true,
+    pages: [{ title: 'Ask Nova to make this Journal aesthetic or beachy', text: '', canvas: 'images/templates/10.png' }],
+    settings: { color: 'blush', dark: false, size: 'a4', spacing: 'narrow', template: 'blank', margin: false, bgImage: 'none' },
   },
 ];
 
@@ -223,7 +236,7 @@ function buildJournalItem(entry, journalsPane, refreshJournals, onClose) {
   const date    = new Date(entry.savedAt);
   const dateStr = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
   const timeStr = date.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
-  const displayTitle = entry.title || 'Untitled journal';
+  const displayTitle = entry.listTitle || entry.title || 'Untitled journal';
   const isAuto = entry.auto;
 
   const isPreset = !!entry.preset;

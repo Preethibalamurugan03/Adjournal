@@ -15,7 +15,7 @@ const RESPONSES = [
 // Keyword-matched answers
 const MATCHED = [
   {
-    keywords: ['periodic', 'periodic component', 'fourier', 'explain this doc', 'explain this document', 'explain this', 'explain to me', 'elaborate', 'what does this mean', 'what is this', 'tell me about this', 'describe this', 'break this down', 'summarise this', 'summarize this', 'what does this say'],
+    keywords: ['periodic', 'periodic component', 'fourier', 'explain', 'explain this doc', 'explain this document', 'explain this', 'explain to me', 'elaborate', 'what does this mean', 'what is this', 'tell me about this', 'describe this', 'break this down', 'summarise this', 'summarize this', 'what does this say'],
     answer: "In signal processing, periodic components are the predictable, repeating rhythms hidden within a chaotic signal—much like individual musical notes buried inside a noisy room. While these cycles are almost impossible to tease apart when looking at a standard time-domain graph, the Fourier transform acts as a mathematical prism. By switching the perspective to the frequency domain, it strips away the confusing background noise and exposes each hidden repetition as a sharp, distinct peak, making it easy to diagnose a faulty machine, decode brain waves, or isolate long-term climate patterns.",
   },
   {

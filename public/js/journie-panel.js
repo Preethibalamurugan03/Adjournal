@@ -26,7 +26,7 @@ const MATCHED = [
     keywords: ['aesthetic', 'make it look better', 'make this look better', 'prettier', 'beautify', 'make it prettier', 'make this prettier', 'make it more beautiful', 'improve the look'],
     answer: "There you go — I've switched to a more aesthetic template for you. ✨",
     action() {
-      const src = 'public/images/templates/11.png';
+      const src = 'images/templates/11.png';
       setBgImage(src);
       saveSettings();
       document.querySelectorAll('.bg-template-card').forEach(c => {

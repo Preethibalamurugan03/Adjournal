@@ -126,11 +126,11 @@ function placeDOMImage(pageContentEl, bbox, src) {
 // ── Public API ────────────────────────────────────────────────
 export function placeResponse(ctx, pageContentEl, bbox, type) {
   if (type === 'math') {
-    placeDOMImage(pageContentEl, bbox, '/images/math ans.jpeg');
+    placeDOMImage(pageContentEl, bbox, 'images/math ans.jpeg');
     return;
   }
   if (type === 'image') {
-    placeDOMImage(pageContentEl, bbox, '/images/kidney.jpeg');
+    placeDOMImage(pageContentEl, bbox, 'images/kidney.jpeg');
     return;
   }
 }
